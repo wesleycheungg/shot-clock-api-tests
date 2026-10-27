@@ -1,0 +1,233 @@
+{
+  "leagues": [
+    {
+      "id": "46",
+      "abbreviation": "NBA",
+      "name": "National Basketball Association"
+    }
+  ],
+  "season": {
+    "type": 2,
+    "year": 2027
+  },
+  "day": {
+    "date": "2026-10-26"
+  },
+  "events": [
+    {
+      "id": "401810001",
+      "uid": "s:40~l:46~e:401810001",
+      "date": "2026-10-26T23:30Z",
+      "name": "Los Angeles Lakers at Golden State Warriors",
+      "shortName": "LAL @ GS",
+      "season": {
+        "year": 2027,
+        "type": 2,
+        "slug": "regular-season"
+      },
+      "competitions": [
+        {
+          "id": "401810001",
+          "date": "2026-10-26T23:30Z",
+          "attendance": 18064,
+          "competitors": [
+            {
+              "id": "9",
+              "homeAway": "home",
+              "score": "61",
+              "team": {
+                "id": "9",
+                "abbreviation": "GS",
+                "displayName": "Golden State Warriors",
+                "location": "Golden State"
+              }
+            },
+            {
+              "id": "13",
+              "homeAway": "away",
+              "score": "54",
+              "team": {
+                "id": "13",
+                "abbreviation": "LAL",
+                "displayName": "Los Angeles Lakers",
+                "location": "Los Angeles"
+              }
+            }
+          ],
+          "status": {
+            "clock": 268.0,
+            "displayClock": "4:28",
+            "period": 2,
+            "type": {
+              "id": "2",
+              "name": "STATUS_IN_PROGRESS",
+              "state": "in",
+              "completed": false,
+              "description": "Status_In_Progress",
+              "detail": "5:12 - 2nd Quarter",
+              "shortDetail": "5:12 - 2nd"
+            }
+          }
+        }
+      ],
+      "status": {
+        "clock": 268.0,
+        "displayClock": "4:28",
+        "period": 2,
+        "type": {
+          "id": "2",
+          "name": "STATUS_IN_PROGRESS",
+          "state": "in",
+          "completed": false,
+          "description": "Status_In_Progress",
+          "detail": "5:12 - 2nd Quarter",
+          "shortDetail": "5:12 - 2nd"
+        }
+      }
+    },
+    {
+      "id": "401810002",
+      "uid": "s:40~l:46~e:401810002",
+      "date": "2026-10-26T23:30Z",
+      "name": "Boston Celtics at New York Knicks",
+      "shortName": "BOS @ NY",
+      "season": {
+        "year": 2027,
+        "type": 2,
+        "slug": "regular-season"
+      },
+      "competitions": [
+        {
+          "id": "401810002",
+          "date": "2026-10-26T23:30Z",
+          "attendance": 18064,
+          "competitors": [
+            {
+              "id": "18",
+              "homeAway": "home",
+              "score": "104",
+              "team": {
+                "id": "18",
+                "abbreviation": "NY",
+                "displayName": "New York Knicks",
+                "location": "New York"
+              },
+              "winner": false
+            },
+            {
+              "id": "2",
+              "homeAway": "away",
+              "score": "112",
+              "team": {
+                "id": "2",
+                "abbreviation": "BOS",
+                "displayName": "Boston Celtics",
+                "location": "Boston"
+              },
+              "winner": true
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "0.0",
+            "period": 4,
+            "type": {
+              "id": "3",
+              "name": "STATUS_FINAL",
+              "state": "post",
+              "completed": true,
+              "description": "Status_Final",
+              "detail": "Final",
+              "shortDetail": "Final"
+            }
+          }
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "0.0",
+        "period": 4,
+        "type": {
+          "id": "3",
+          "name": "STATUS_FINAL",
+          "state": "post",
+          "completed": true,
+          "description": "Status_Final",
+          "detail": "Final",
+          "shortDetail": "Final"
+        }
+      }
+    },
+    {
+      "id": "401810003",
+      "uid": "s:40~l:46~e:401810003",
+      "date": "2026-10-26T23:30Z",
+      "name": "Denver Nuggets at Phoenix Suns",
+      "shortName": "DEN @ PHX",
+      "season": {
+        "year": 2027,
+        "type": 2,
+        "slug": "regular-season"
+      },
+      "competitions": [
+        {
+          "id": "401810003",
+          "date": "2026-10-26T23:30Z",
+          "attendance": 18064,
+          "competitors": [
+            {
+              "id": "21",
+              "homeAway": "home",
+              "score": "0",
+              "team": {
+                "id": "21",
+                "abbreviation": "PHX",
+                "displayName": "Phoenix Suns",
+                "location": "Phoenix"
+              }
+            },
+            {
+              "id": "7",
+              "homeAway": "away",
+              "score": "0",
+              "team": {
+                "id": "7",
+                "abbreviation": "DEN",
+                "displayName": "Denver Nuggets",
+                "location": "Denver"
+              }
+            }
+          ],
+          "status": {
+            "clock": 720.0,
+            "displayClock": "12:00",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Status_Scheduled",
+              "detail": "Mon, October 26th at 7:30 PM EDT",
+              "shortDetail": "10/26 - 7:30 PM EDT"
+            }
+          }
+        }
+      ],
+      "status": {
+        "clock": 720.0,
+        "displayClock": "12:00",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Status_Scheduled",
+          "detail": "Mon, October 26th at 7:30 PM EDT",
+          "shortDetail": "10/26 - 7:30 PM EDT"
+        }
+      }
+    }
+  ]
+}

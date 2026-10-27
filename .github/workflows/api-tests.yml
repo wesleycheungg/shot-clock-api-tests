@@ -1,0 +1,41 @@
+name: Shot Clock tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    # Every 30 min from 4pm to 9:30pm PT (23:00-04:30 UTC), when NBA games are live
+    - cron: "*/30 23 * * *"
+    - cron: "*/30 0-4 * * *"
+
+jobs:
+  offline:
+    name: Offline suite (contract, rules, resilience, freshness logic)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: pip }
+      - run: pip install -r requirements.txt
+      - run: pytest --html=report-offline.html --self-contained-html --junitxml=junit-offline.xml
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: { name: offline-report, path: "report-offline.html" }
+
+  live:
+    name: Live ESPN API
+    needs: offline
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: pip }
+      - run: pip install -r requirements.txt
+      - run: pytest -m live -s --html=report-live.html --self-contained-html
+        env:
+          LIVE_UPDATE_SLA_SECONDS: "60"
+          POLL_INTERVAL_SECONDS: "5"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: { name: live-report, path: "report-live.html" }

@@ -1,0 +1,17 @@
+{
+  "leagues": [
+    {
+      "id": "46",
+      "abbreviation": "NBA",
+      "name": "National Basketball Association"
+    }
+  ],
+  "season": {
+    "type": 2,
+    "year": 2027
+  },
+  "day": {
+    "date": "2026-10-26"
+  },
+  "events": []
+}
